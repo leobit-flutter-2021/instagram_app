@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'package:instagram_app/screens/user_profile_screen.dart';
+import 'package:instagram_app/screens/main_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -34,7 +33,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: UserProfilePage(),
+      body: MainScreen(),
     );
   }
 }
