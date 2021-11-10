@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:instagram_app/screens/search_screen.dart';
 import 'package:instagram_app/screens/user_profile_screen.dart';
 import 'package:instagram_app/theme/theme.dart';
 
@@ -21,18 +22,17 @@ class _MainScreenState extends State<MainScreen> {
     HomeScreen(
       key: PageStorageKey<String>('Home'),
     ),
+    SearchScreen(
+      key: PageStorageKey<String>('Search'),
+    ),
     Text(
-  'Search is to be implemented',
-  textAlign: TextAlign.center,
-),
+      'Upload is to be implemented',
+      textAlign: TextAlign.center,
+    ),
     Text(
-  'Upload is to be implemented',
-  textAlign: TextAlign.center,
-),
-    Text(
-  'Activity is to be implemented',
-  textAlign: TextAlign.center,
-),
+      'Activity is to be implemented',
+      textAlign: TextAlign.center,
+    ),
     UserProfilePage(
       key: PageStorageKey<String>('Profile'),
     ),
