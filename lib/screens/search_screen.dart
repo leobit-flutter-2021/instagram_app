@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_instagram_app/data/colors.dart';
-import 'package:flutter_instagram_app/data/data_template.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
+import 'package:instagram_app/data/colors.dart';
+import 'package:instagram_app/data/data_template.dart';
 
 class SearchScreen extends StatefulWidget {
   const SearchScreen({Key? key}) : super(key: key);
