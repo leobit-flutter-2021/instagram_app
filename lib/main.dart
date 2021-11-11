@@ -1,21 +1,31 @@
 import 'package:flutter/material.dart';
+import 'package:redux/redux.dart';
+import 'package:flutter_redux/flutter_redux.dart';
+
 import 'package:instagram_app/screens/main_screen.dart';
+import 'package:instagram_app/store/reducer.dart';
 
 void main() {
-  runApp(const MyApp());
+  final Store<int> store = Store<int>(reducer, initialState: 0);
+  runApp(MyApp(store: store));
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({Key? key, required this.store}) : super(key: key);
+
+  final Store<int> store;
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Instagram',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
+    return StoreProvider(
+      store: store,
+      child: MaterialApp(
+        title: 'Instagram',
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
+        ),
+        home: const MyHomePage(title: 'Instagram'),
       ),
-      home: const MyHomePage(title: 'Instagram'),
     );
   }
 }
