@@ -1,4 +1,4 @@
-import 'package:instagram_app/widgets/user_profile_widgets/highlight.dart';
+import 'package:instagram_app/widgets/user_profile_widgets/models/highlight.dart';
 
 const String avatarUrl = 'assets/images/user-avatar.jpg';
 const String username = 'redd4ford';
@@ -9,7 +9,7 @@ const String followingCounter = '-1';
 
 const String fullName = 'Viktoriia Yehorova';
 const String bio =
-    'no talk with me im angry after 20 hrs of making this screen';
+    'no talk with me im angry after 23 hrs of making this screen';
 
 const List<String> userPhotos = [
   'assets/images/user-photos/1.jpg',
